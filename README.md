@@ -1,58 +1,45 @@
-# VKUI — шаблон приложения на Vite.js + TypeScript
+# Тестовое задание для проекта на VKUI - страницы Заявка на проект для внешнего инициатора и Внешние заявки
 
-[![Открыть в StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/VKCOM/VKUI/tree/master/examples/vkui-vite-ts)
-[![Открыть в CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/VKCOM/VKUI/tree/master/examples/vkui-vite-ts)
+В рамках тестового задания с использованием VKUI разработаны две страницы того же функционала https://cabinet.miem.hse.ru/external/active и https://cabinet.miem.hse.ru/application/external. Веб-приложение имеет следующий функционал:
+- заполнение заявки на проект с валидацией полей, отправка данных на сервер, уведомление пользователя об успешной отправке;
+- просмотр списка заявок с сервера с возможностью фильтрации по статусу и типу проекта, а также с возможностью поиска.
 
-Готовый шаблон для быстрого старта проектов с VKUI, Vite и TypeScript.
+API использовано локальное localhost:8000/back (кабинет проектной деятельности МИЭМ).
 
-## Как использовать
+Основной стек: React, TS, VKUI, React Query, React Router, @hey-api/openapi-ts, Vite.
 
-### 1. Скачать шаблон
+## Установка и запуск
 
-Через curl:
+1. Клонируйте репозиторий:
+
+  ```bash
+    git clone https://github.com/Nerex337/vk-ui-test-project.git
+  ```
+
+2. Перейдите в папку проекта:
+
+  ```bash
+    cd vk-ui-test-project
+  ```
+
+3. Установите зависимости:
+  ```bash
+    yarn install
+  ```
+
+4. Запустите локальный API Кабинет МИЭМ (отдельное окно, отдельный проект, вне данного репозитория)
+
+  ```bash
+    task s:d
+  ```
+
+5. Запустите:
+  ```bash
+    yarn dev
+  ```
+
+## Сборка проекта
 
 ```bash
-curl https://codeload.github.com/VKCOM/VKUI/tar.gz/master | tar -xz --strip=2 VKUI-master/examples/vkui-vite-ts
-cd vkui-vite-ts
+  yarn build
 ```
-
-Или клонировать репозиторий:
-
-```bash
-git clone https://github.com/VKCOM/VKUI.git
-cd VKUI/examples/vkui-vite-ts
-```
-
-### 2. Установить зависимости
-
-```bash
-yarn install
-```
-
-### 3. Запустить проект
-
-В режиме разработки:
-
-```bash
-yarn dev
-```
-
-Сборка для production:
-
-```bash
-yarn build
-```
-
-## О шаблоне
-
-Этот пример демонстрирует:
-
-- Интеграцию VKUI с современным сборщиком Vite
-- Готовую конфигурацию TypeScript
-- Настройку цветовой схемы приложения (темная/светлая)
-- Примеры использования основных компонентов VKUI
-
-## Что дальше?
-
-1. Изучите [документацию VKUI](https://vkui.io/) для работы с компонентами
-2. Посмотрите [другие примеры](https://github.com/VKCOM/VKUI/tree/master/examples) из репозитория
