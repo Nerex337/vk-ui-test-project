@@ -1,0 +1,45 @@
+{
+  "name": "vkui-vite-ts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.6",
+    "@floating-ui/utils": "^0.2.11",
+    "@swc/helpers": "^0.5.21",
+    "@tanstack/react-query": "^5.99.0",
+    "@vkontakte/icons": "^3.43.0",
+    "@vkontakte/vkui": "^7.11.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "@hey-api/openapi-ts": "0.96.0",
+    "@hey-api/vite-plugin": "0.3.0",
+    "@rolldown/plugin-babel": "^0.2.0",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.0",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^10.0.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "typescript": "^6.0.0",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^8.0.5"
+  },
+  "packageManager": "yarn@4.13.0+sha512.5c20ba010c99815433e5c8453112165e673f1c7948d8d2b267f4b5e52097538658388ebc9f9580656d9b75c5cc996f990f611f99304a2197d4c56d21eea370e7"
+}
