@@ -19,7 +19,7 @@ import {
   Snackbar,
   SimpleGrid,
 } from "@vkontakte/vkui";
-import { useState } from "react";
+import { useState, type ReactNode, type ChangeEvent} from "react";
 import { Icon12ErrorCircleFillYellow, Icon16Done } from "@vkontakte/icons";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
@@ -31,7 +31,7 @@ import styles from "./Application.module.css";
 
 export const Application = () => {
   const [isAgreed, setIsAgreed] = useState(false);
-  const [snackbar, setSnackbar] = useState<React.ReactNode | null>(null);
+  const [snackbar, setSnackbar] = useState<ReactNode | null>(null);
   const initialFormData = {
     fullName: "",
     email: "",
@@ -67,7 +67,7 @@ export const Application = () => {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<
+    e: ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
     >,
   ) => {
